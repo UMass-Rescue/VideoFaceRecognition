@@ -1,0 +1,43 @@
+<html>
+<head>
+	<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+	<link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+
+	<link href="./css/video_player.css" rel="stylesheet" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  	<script src="./js/color-scheme.min.js"></script>
+	<script src="./js/data.js"></script>
+	<script src="./js/video_player.js" defer></script>
+	<title>Face Recognition Player</title>
+</head>
+
+<body style="padding-left: 10%; padding-right: 10%; padding-top: 1%;">
+<!-- <h1><span class="title">Face Timeline (Demo)</span></h1> -->
+<div id="video_parent">
+	<video
+		id="my-video"
+		class="video-js vjs-big-play-centered vjs-theme-city"
+		controls
+		preload="auto"
+		data-setup='{ "inactivityTimeout": 0,"fluid": "true", "width" : "auto", "height" : "auto" }'
+		>
+		<source src="./video/Inception_3.mp4" type="video/mp4" />
+		<p class="vjs-no-js">
+		  To view this video please enable JavaScript, and consider upgrading to a
+		  web browser that
+		  <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+		</p>
+	</video>
+
+</div>
+	<div id="grid-container">
+	</div>
+
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+
+</body>
+</html>
